@@ -1,0 +1,5 @@
+ d_limit =    402.80000000000001     
+ av_fract_infi =   0.29600216821897585     
+ fract_fi_realts =   0.44194098707289908     
+ av_fract_infi_selected =   0.33153863947548279     
+ fract_fi_realts_selected =   0.47294902982913456     

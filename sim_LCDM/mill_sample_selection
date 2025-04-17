@@ -1,0 +1,18 @@
+select G1.galaxyID,G1.x,G1.y,G1.z
+  from Guo2010a..MR as G1
+ where (G1.snapnum=63 OR G1.snapnum=62 OR G1.snapnum=61 OR G1.snapnum=60 OR G1.snapnum=59 OR G1.snapnum=58)
+   and G1.x>0
+   and G1.x<400
+   and G1.y>0
+   and G1.y<400
+   and G1.z>0
+   and G1.z<400
+   and G1.rDust<-18
+   and G1.type<>2
+   and ((G1.gDust-G1.rDust)>0.65)
+   and ((G1.coldGas/(G1.np*0.0861))<0.0008)
+   and ((G1.sfr/(G1.np*0.0861))<0.01)   
+   
+ 
+ G1.snapnum,G1.np,G1.mvir,G1.coldGas,G1.sfr,G1.massWeightedAge,G1.gDust,G1.rDust,G1.zDust,G1.bulgeMass,G1.stellarMass,G1.bulgeSize,G1.stellarDiskRadius,G1.gasDiskRadius
+
